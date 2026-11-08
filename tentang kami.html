@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemesanan - Sari Minang</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h2>SARI MINANG</h2>
+    <nav>
+        <a href="index.html">Beranda</a>
+        <a href="menu.html">Menu</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="pesan.html">Pesan</a>
+    </nav>
+</header>
+
+<main>
+    <h1>Formulir Pemesanan</h1>
+    <p>Silakan isi formulir untuk melakukan pemesanan.</p>
+
+    <form onsubmit="alert('Terima kasih, pesanan Anda berhasil disimulasikan!'); return false;">
+
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama"
+               placeholder="Masukkan nama Anda" required>
+
+        <label for="telepon">Nomor Telepon:</label>
+        <input type="tel" id="telepon" name="telepon"
+               placeholder="Masukkan nomor telepon" required>
+
+        <label for="menu">Pilih Makanan:</label>
+        <select id="menu" name="menu" required>
+            <option value="">-- Pilih Menu --</option>
+            <option>Rendang Daging</option>
+            <option>Ayam Pop</option>
+            <option>Gulai Tunjang</option>
+            <option>Telur Balado</option>
+        </select>
+
+        <label for="jumlah">Jumlah Pesanan:</label>
+        <input type="number" id="jumlah" name="jumlah"
+               min="1" required>
+
+        <label for="catatan">Catatan:</label>
+        <textarea id="catatan" name="catatan"
+                  rows="4"></textarea>
+
+        <button type="submit">Kirim Pesanan</button>
+
+    </form>
+</main>
+
+<footer>
+    <p>&copy; 2026 Rumah Makan Sari Minang</p>
+</footer>
+
+</body>
+</html>
